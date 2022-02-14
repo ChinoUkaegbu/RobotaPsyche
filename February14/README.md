@@ -46,6 +46,8 @@ I wanted the new tuna to be spawned only when 2 tuna were in the incubator at th
 
 ![2](images/Screenshot%20(295).jpeg)
 
+[Link to Video] https://youtu.be/xJ4EKzne_9Y
+
 **Conclusion**
 
 This was a really cool project to do and I really enjoyed it. It was really nice thinking up the rules and implementing them and even having to modify them was quite the learning experience.
