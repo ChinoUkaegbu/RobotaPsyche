@@ -96,6 +96,7 @@ Source: https://www.circuitstoday.com/simple-led-projects-using-arduino
 
 This was a really cool project to do and I really enjoyed it. It was cool actually working with like tangible objects and seeing the way code kind of brought them to life.
 
-**Cool Things the Circuit Does**
+**Clever Things I Learned**
 
-I was making up llike classes depending on what I observed the ecosystem needed. Like when the sharks were eating the fish too quickly, I introduced the fishermen hooks and when I noticed that the fish were still dying quickly, I introduced the incubator to spawn more fishes.
++ I realized that allong the way< I was creating classes depending on what I observed the ecosystem needed. For instance when the sharks were eating the tuna too quickly, I introduced the fishermen hooks and when I noticed that the tuna were still dying quickly, I introduced the incubator to spawn more fishes. I think the flexibility was really cool, it was kind of like building my own miniature city.
++ 
