@@ -38,43 +38,14 @@ Finally, the ecosystem itself has a behaviour which I thought would be a fun add
 
 **Difficulties**
 
-+ **Randomizing the values:**\
-I was actually lowkey grateful for this difficulty because without it, I wouldn't have discovered the randomSeed() function. I noticed that anytime I printed the "random" value, it was the same number that popped up. It turns out that Arduino's random function isn't as random as I thought. I searched for help on Google and discovered that you could "initialize the pseudo-random number generator, causing it to start at an arbitrary point in its random sequence" using randomSeed() and not only did I fix the error, I also gained insight into how computers randomize values.
++ **Initializing attraction and repulsion:**\
+I really wanted the tuna to actually move together like as one huge school but I couldn't really figure out what values to initialize the strength of the attract() method with. In the end, I just went with the gravitational force we used in class because I felt like the behaviour was satisfactory so they don't really move as one uniform mass but they just kind of move...together?. Now that i think about it, if they had been moving as one mass, they would have been eaten quite quickly by the sharks. Or maybe they would have reproduced too quickly. Also for the repulsion of the sharks, I ended up going with a constant value after I experimented.
 
-+ **Incrementing the counter:**\
-I tried to increment the counter with each button push but the counter just stayed at some random position. I didn't fix this actually, I just worked my way around it outlined in this part of the code:
++ **Detecting when objects were colliding:**\
+It turns out that collision detection using triangles is very...stressful (compared to working with circles at least). I actually couldn't end up figuring this bug out completely and so sometimes the fishes disappear when they're close to the shark (not necesarily overlapping with the shark) but I was able to modify the eat() method so that the margin of error isn't so bad.
 
-```js
-if (switch1Position == HIGH) {
-      counter1 = 5;
-      digitalWrite(YELLOWLED1, HIGH);
-    } else  {
-      digitalWrite(YELLOWLED1, LOW);
-    }
-
-    if (switch2Position == HIGH) {
-      counter2 = 10;
-      digitalWrite(YELLOWLED2, HIGH);
-    } else  {
-      digitalWrite(YELLOWLED2, LOW);
-    }
-
-    if (switch3Position == HIGH) {
-      counter3 = 20;
-      digitalWrite(YELLOWLED3, HIGH);
-    } else  {
-      digitalWrite(YELLOWLED3, LOW);
-    }
-
-    sum = counter1 + counter2 + counter3;
-    if (sum == answer) {
-      digitalWrite(GREENLED, HIGH);
-      digitalWrite(REDLED, LOW);
-      Serial.print("Congratulations! You guessed right \n");
-      Serial.print("Game Over! \n");
-      startgame = false;
-```
-So that's basically why the buttons can only be pushed once to actually have an effect. Some may call it a design flaw, I see it as a way to make the game more challenging 😆
++ **Detecting when 2 tuna are in the incubator:**\
+I wanted the new tuna to be spawned only when 2 tuna were in the incubator at the same time but I found it a bit tricky so now we have this sort of system where fish 1 drops the eggs in the incubator and after fish 2 takes care of the egg until it's ready to be added to the array list. This is probably not biologically accurate but well...
 
 **Interesting Things I Found:**
 
