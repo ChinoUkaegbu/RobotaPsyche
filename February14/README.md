@@ -23,19 +23,6 @@ Furthermore, there is an 'incubator' class which is responsible for creating mor
 
 Finally, the ecosystem itself has a behaviour which I thought would be a fun addition. The background is made up of two rectangles that cover half the height of the window and stretch out across the entire width. The top rectangle is a lighter shade than the bottom rectangle. This is due to the presence of the sun (the yellow sector in the top left corner of the window) because as depth decreases, less light gets into the water. Also, the fishes (both sharks and tuna) obey this rule because when they are in the 'light area' they have a lighter more vibrant shade but once they cross over into the 'dark area', they have a darker and somewhat duller shade to signify the influence of sunlight on the ecosystem.
 
-**Process**
-
-+ I first got to work on the breadboard
-+ I got the parts of the circuit I would be using and placed the buttons and LEDs on the breadboard, making sure to connect the appropriate resistors.
-+ Then I started with the wiring. I I wanted it to look a little organized because there were a lot of parts on the board, so I tried to align the components and use similar coloured wires.
-+ Below is the schematic diagram:
-
-![Schematic](images/Screenshot%20(298).jpg)
-
-+ Also, here are the messages being displayed in the serial monitor while the game is running:
-
-![SerialMonitor](images/Screenshot_(293).jpeg)
-
 **Difficulties**
 
 + **Initializing attraction and repulsion:**\
@@ -47,56 +34,22 @@ It turns out that collision detection using triangles is very...stressful (compa
 + **Detecting when 2 tuna are in the incubator:**\
 I wanted the new tuna to be spawned only when 2 tuna were in the incubator at the same time but I found it a bit tricky so now we have this sort of system where fish 1 drops the eggs in the incubator and after fish 2 takes care of the egg until it's ready to be added to the array list. This is probably not biologically accurate but well...
 
-**Interesting Things I Found:**
-
-+ randomSeed()
-+ analogRead()
-+ I didn't use this, but I also found this cool function that basically made the momentary switches act as toggles, so instead of the LEDs going off when the button isn't being pushed, it actually stays on or off, depending. This is it: 
-```js
-const int LED=13;
-const int SW=7;
-boolean state = true; //declare variable state as boolean
-int val=0;
-
-void setup()
-{
-  pinMode(LED,OUTPUT);
-  pinMode(SW,INPUT);
-  }
-void loop()
-{
-  val=digitalRead(SW);
-  delay(120); // Software debouncing using 120ms delay
-
-if(val==HIGH)
-
-{state=!state; // Compliment variable state using ! operator
-  digitalWrite(LED,state);
-}
-}
-```
-Source: https://www.circuitstoday.com/simple-led-projects-using-arduino
 
 **Possible Improvements**
 
-+ The values of the LEDs being randomized instead of being fixed would make it a bit more interesting I guess
-+ If I could get the counter to increment, there could be multiple ways to arrive at a solution
++ Reducing margin of error for collisions
++ Smoother transition from light stage to dark stage
 
-**Photos of Circuit**
+**Photos of Project**
 
 ![1](images/Screenshot%20(294).jpg)
 
 ![2](images/Screenshot%20(295).jpeg)
 
-![3](images/Screenshot%20(296).jpg)
-
-![4](images/Screenshot%20(297).jpeg)
-
 **Conclusion**
 
-This was a really cool project to do and I really enjoyed it. It was cool actually working with like tangible objects and seeing the way code kind of brought them to life.
+This was a really cool project to do and I really enjoyed it. It was really nice thinking up the rules and implementing them and even having to modify them was quite the learning experience.
 
 **Clever Things I Learned**
 
 + I realized that allong the way< I was creating classes depending on what I observed the ecosystem needed. For instance when the sharks were eating the tuna too quickly, I introduced the fishermen hooks and when I noticed that the tuna were still dying quickly, I introduced the incubator to spawn more fishes. I think the flexibility was really cool, it was kind of like building my own miniature city.
-+ 
