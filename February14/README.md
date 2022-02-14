@@ -21,6 +21,42 @@ In addition to having the fish, there is also two 'fishing hooks' represented by
 
 Furthermore, there is an 'incubator' class which is responsible for creating more tuna. The idea is that each tuna has an attribute know as 'breedable' which is a boolean variable initially set to true. This means all tuna initially is capable of entering the incubator and having an effect on it. The incubator class has a variable called 'counter' (set initially to 0) and a method known as breed(). The breed() method checks if 2 fishes have entered into the incubator consecutively and if both fishes have the breedable attribute set to true, the counter is incremented  by 2 and the breedable attribute is set to false. When this happens, a new tuna is added to the array list and is thus introduced to the ecosystem.
 
+```js
+//Incubator
+
+void breed() {
+    if (counter==0)
+    {
+      display();
+    }
+
+    //For all the tuna
+    for (int i = 0; i<tunas.size(); i++)
+    {
+      //if the tuna is in the incubator region and hasn't been there before, then increment te counter variable and set brredability of the fish to false;
+      if (tunas.get(i).location.x >= location.x && tunas.get(i).location.x <= location.x+100 && tunas.get(i).location.y >= 300 && tunas.get(i).location.y <= 600 && tunas.get(i).breedable == true)
+      {
+        counter++;
+        tunas.get(i).breedable = false;
+        break;
+      }
+    }
+
+
+    if (counter%2==0 && counter!=0) { //if 2 fish have been in the incubator one after the other (I'll refer to this as one 'iteration', a new tuna fish is spawned and the color of the incubator changes to grey
+      fill(192, 192, 192);
+      rect(location.x, location.y, 100, 300);
+      counter = 0;
+      tunas.add(new Tuna(1.5, // mass
+        random(width), random(height)));
+    } else if (counter%2!=0 && counter!=0) { //if only 1 fish has been in the incubator in that 'iteration' then the color of the incubator changes but 1 more tuna fish for a new fish to be spawned
+      //fill(98,13,168);
+      fill(81,1,160);
+      rect(location.x, location.y, 100, 300);
+    }
+  }
+  ```
+
 Finally, the ecosystem itself has a behaviour which I thought would be a fun addition. The background is made up of two rectangles that cover half the height of the window and stretch out across the entire width. The top rectangle is a lighter shade than the bottom rectangle. This is due to the presence of the sun (the yellow sector in the top left corner of the window) because as depth decreases, less light gets into the water. Also, the fishes (both sharks and tuna) obey this rule because when they are in the 'light area' they have a lighter more vibrant shade but once they cross over into the 'dark area', they have a darker and somewhat duller shade to signify the influence of sunlight on the ecosystem.
 
 **Difficulties**
