@@ -42,9 +42,11 @@ I wanted the new tuna to be spawned only when 2 tuna were in the incubator at th
 
 **Photos of Project**
 
-![1](images/Screenshot%20(294).jpg)
+![1](images/Screenshot_1.png)
 
-![2](images/Screenshot%20(295).jpeg)
+![2](images/Screenshot_2.png)
+
+![3](images/Screenshot_3.png)
 
 [Link to Video](https://youtu.be/xJ4EKzne_9Y)
 
