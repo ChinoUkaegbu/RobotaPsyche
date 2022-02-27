@@ -8,4 +8,4 @@ The zoinks hunger level should increase faster than the others
 
 Or maybe jeepers could be the predators
 
-OMG wait I could do the incubator thing where like zoinks and jinkies could either like reproduce within themselves or like a cross between zoinks and jinkies
+OMG wait I could do the incubator thing where like zoinks and jinkies could either like reproduce within themselves or like a cross between zoinks and jinkies...zinkies maybe (these character names are extremely questionable)
