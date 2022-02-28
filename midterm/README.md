@@ -22,7 +22,7 @@ Zoinks:
 Jinkies:
 + The protectors of the zoinks
 + Are actively trying to repel the jeepers from the zoinks and so they are attracted to the zoinks and repel the jeepers in an attempt to protect the zoinks
-+ However, the jinkies are only able to repel the jeepers in phases, think of like time intervals where the protection variable is set to true for like 20 seconds and then for like 5 seconds,it's set to false
++ However, the jinkies are only able to repel the jeepers in phases, think of like time intervals where the protection variable is set to true for like 20 seconds and then for like 5 seconds,it's set to false...kind of like a boundary being put up and down
 + The jinkies need less food than the zoinks and they are unable to get the food directly from the food particles floating in the habitat but have to interact with the zoinks in order to get nourishment
 
 Jeepers:
