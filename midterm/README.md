@@ -1,4 +1,4 @@
-(Rough Draft, not edited)
+(Draft, sort of edited)
 
 Character names - zoinks, jinkies, jeepers (inspired by the Scooby Doo character catchphrases because I couldn't think of anything else) and then "food" particles.
 
