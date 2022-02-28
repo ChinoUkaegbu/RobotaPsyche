@@ -14,7 +14,7 @@ Alright, I could do the incubator thing where like zoinks and jinkies could eith
 Okay the DNA of each creature is as follows:
 
 Zoinks:
-+ Hunger level: depletes way faster than the jinkies ad the jeepers
++ Hunger level: depletes way faster than the jinkies and the jeepers
 + Primary food hunters i.e. they actively are attracted to the objects in the "food" class
 + I'm thinking if it's possible for a zoink to interact with a food particle, eat half of that food particle, and then when a jinky interacts with that zoink, they get half of the food...the implementation isn't super clear in my head right now but I'm thinking a variable that alternates between two states...
 
