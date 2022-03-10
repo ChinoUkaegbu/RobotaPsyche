@@ -5,7 +5,7 @@
 
 **Description**
 
-Develop a set of rules for simulating the real-world behavior of a creature, using the code example above as inspiration (or as a starting place), implement your creature.
+The task was to develop a more complex ecology, either continuing with what was created for February 14, or creating a new ecology. Incorporate various behaviors such as following a flow field, attraction, aggression, arriving, cohesion, separation, and flocking. You do not need to incorporate all of the behaviours that we learned about.
 
 **Concept and Implementation**
 
