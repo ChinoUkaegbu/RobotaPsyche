@@ -1,4 +1,4 @@
-# 27th February, 2022
+## 27th February, 2022
 
 (Draft, sort of edited)
 
@@ -51,5 +51,5 @@ I'm trying to think of how the flow field would be implemented...I think it woul
 
 
 
-# 9th March, 2022
+## 9th March, 2022
 Manually adding more food instead of waiting for it to spawn, gives the zoinks more chance to survive for some reason
