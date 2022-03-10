@@ -5,7 +5,11 @@
 
 **Description**
 
-The task was to develop a more complex ecology, either continuing with what was created for February 14, or creating a new ecology. Incorporate various behaviors such as following a flow field, attraction, aggression, arriving, cohesion, separation, and flocking. You do not need to incorporate all of the behaviours that we learned about.
+The task was to develop a more complex ecology, either continuing with what was created for February 14, or creating a new ecology. Incorporate various behaviors such as following a flow field, attraction, aggression, arriving, cohesion, separation, and flocking.
+
+**Inspiration**
+
+The names of the character as well as the colors used to depict them were drawn from the hit TV series Scooby Doo. The behaviours were inspired by a combination of real life systems as well as imagined ones.
 
 **Concept and Implementation**
 
@@ -58,6 +62,10 @@ void breed() {
   ```
 
 Finally, the ecosystem itself has a behaviour which I thought would be a fun addition. The background is made up of two rectangles that cover half the height of the window and stretch out across the entire width. The top rectangle is a lighter shade than the bottom rectangle. This is due to the presence of the sun (the yellow sector in the top left corner of the window) because as depth decreases, less light gets into the water. Also, the fishes (both sharks and tuna) obey this rule because when they are in the 'light area' they have a lighter more vibrant shade but once they cross over into the 'dark area', they have a darker and somewhat duller shade to signify the influence of sunlight on the ecosystem.
+
+**Implementation**
+
+Yuh
 
 **Difficulties**
 
