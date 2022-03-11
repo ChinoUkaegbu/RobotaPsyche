@@ -85,6 +85,9 @@ The collision detection was a bit more accurate in this project as I used circle
 + **Erratic movement of jeeper after time:**\
 After some time, the jeepers start to move extremely quickly across the screen. I suspect that this is as a result of the forces acting on it being accumulated without being reset at each iteration.
 
++ **ConcurrentModificationException:**\
+I was initially using the syntax ```for(Food f: foods)``` to iterate over the food particles to remove them after they had been eaten by the zoinks. However, doing this resulted in a ConcurrentModificationException as I was trying to remove an element from the array list before it was done iterating. To solve this, I used the ```for(int i=0; i<foods.size(); i++)``` syntax as it's more accomodating of changes made during the iteration.
+
 **Possible Improvements**
 
 + Improved food system. Currently, the zoinks don't actually lose food in their storage unless a jinkie interacts with it, so theoretically, a zoink might only need to feed once throughout a run of the code. Implementing a hunger system might be worth thinking about.
@@ -102,8 +105,8 @@ After some time, the jeepers start to move extremely quickly across the screen. 
 
 **Conclusion**
 
-This was a really cool project to do and I really enjoyed it. It was really nice thinking up the rules and implementing them and even having to modify them was quite the learning experience.
+This was a really interesting project. I particularly enjoyed the freedom to come up with our own ecosystems and associated behaviours and implementing the made up rules and adapting the code to include what works and what needed to be improved was also very insightful.
 
-**Clever Things I Learned**
+**Cool Things I Noticed**
 
-+ I realized that allong the way< I was creating classes depending on what I observed the ecosystem needed. For instance when the sharks were eating the tuna too quickly, I introduced the fishermen hooks and when I noticed that the tuna were still dying quickly, I introduced the incubator to spawn more fishes. I think the flexibility was really cool, it was kind of like building my own miniature city.
++ For the food particles, they either spawn automatically if they haven't been on screen in the last five seconds since the last particle was eaten, or the users can manually add particles by clicking on the screen. However, I noticed that the zoinks survived for far much longer when I added the food manually, rather than waiting for it to spawn which I found interesting as I wasn't intentionally trying to keep the zoinks alive for longer, I was just clicking on "random" spots on the screen.
