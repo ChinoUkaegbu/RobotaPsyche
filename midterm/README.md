@@ -13,7 +13,7 @@ The names of the character as well as the colors used to depict them were drawn 
 
 **Concept**
 
-This project is a depiction of a made up ecosyste, consisting of three creatures: the zoinks, jinkies and jeepers. Alongside the living creatures, there exists the food particles present in the ecosystem as well as an incubator.
+This project is a depiction of a made up ecosystem, consisting of three creatures: the zoinks, jinkies and jeepers. Alongside the living creatures, there exists the food particles present in the ecosystem as well as an incubator.
 
 The initial concept I had planned for the project can be found in [this section](https://github.com/ChinoUkaegbu/RobotaPsyche/blob/main/midterm/journal.md#27th-february-2022) of the journal. Most of the ideas were implemented with a couple of modifications which I will go into detail about below.
 
@@ -51,6 +51,24 @@ The creatures and non-living parts of implemented as individual classes. In addi
 
 ![separation](media/separation.png)
 
+The zoinks have two variables responsible for managing food hunting. The ```store_empty``` variable is of boolean data type and is responsible for keeping track of whether a zoink has fed (set to false) or not (set to true). The ```food_stored``` variable is of integer data type and keeps track of the value of food the zoink has at any given moment in time.
+
+For the jinkies, they repel the jeepers that come near them in a bid to protect the zoinks. Furthermore, the section of code responsible for the sharing of food with the zoinks is as follows
+
+```js
+  //function to feed from a zoink that it collides if the zoink's food level hasn't dropped below 10 and if the jinkie is able to feed
+  void feedFrom(Zoink z) {
+    if (dist(location.x, location.y, z.location.x, z.location.y)<((mass*8)+z.r))
+    {
+      if ((z.stored_food>10) && (can_feed==true)) {
+        stored_food+=5;
+        z.stored_food-=5;
+        can_feed = false;
+      }
+    }
+  }
+}
+```
 
 **Difficulties**
 
