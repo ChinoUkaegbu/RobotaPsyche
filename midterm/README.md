@@ -70,6 +70,9 @@ For the jinkies, they repel the jeepers that come near them in a bid to protect 
 }
 ```
 
+However, every 20 seconds, the stored_food variable for the jinkies is reset and so they need to constantly get food from the zoinks.
+
+The incubator works in the same way as it did in the [February 14 project](https://github.com/ChinoUkaegbu/RobotaPsyche/tree/main/February14) with the modification of only being active when the population size drops below a certain threshold
 **Difficulties**
 
 + **Initializing attraction and repulsion:**\
