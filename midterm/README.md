@@ -72,23 +72,23 @@ For the jinkies, they repel the jeepers that come near them in a bid to protect 
 
 However, every 20 seconds, the stored_food variable for the jinkies is reset and so they need to constantly get food from the zoinks.
 
-The incubator works in the same way as it did in the [February 14 project](https://github.com/ChinoUkaegbu/RobotaPsyche/tree/main/February14) with the modification of only being active when the population size drops below a certain threshold
+The incubator works in the same way as it did in the [February 14 project](https://github.com/ChinoUkaegbu/RobotaPsyche/tree/main/February14) with the modification of only being active when the population size drops below a certain threshold.
+
 **Difficulties**
 
-+ **Initializing attraction and repulsion:**\
-I really wanted the tuna to actually move together like as one huge school but I couldn't really figure out what values to initialize the strength of the attract() method with. In the end, I just went with the gravitational force we used in class because I felt like the behaviour was satisfactory so they don't really move as one uniform mass but they just kind of move...together?. Now that i think about it, if they had been moving as one mass, they would have been eaten quite quickly by the sharks. Or maybe they would have reproduced too quickly. Also for the repulsion of the sharks, I ended up going with a constant value after I experimented.
++ **Repulsion**\
+The jinkies are implemented to repel the jeepers. However, there was no attraction or repulsion between the jinkies and so no force was acting on them. Because of this, they were stationary but incrementing the y coordinate of the location enabled the jinkies to move vertically.
 
 + **Detecting when objects were colliding:**\
-It turns out that collision detection using triangles is very...stressful (compared to working with circles at least). I actually couldn't end up figuring this bug out completely and so sometimes the fishes disappear when they're close to the shark (not necesarily overlapping with the shark) but I was able to modify the eat() method so that the margin of error isn't so bad.
+The collision detection was a bit more accurate in this project as I used circles which were easier for detecting colllision. However, there was bit of trial and error in estimating collisions between the triangles and the circles and the ellipses and the triangles
 
-+ **Detecting when 2 tuna are in the incubator:**\
-I wanted the new tuna to be spawned only when 2 tuna were in the incubator at the same time but I found it a bit tricky so now we have this sort of system where fish 1 drops the eggs in the incubator and after fish 2 takes care of the egg until it's ready to be added to the array list. This is probably not biologically accurate but well...
-
++ **Erratic movement of jeeper after time:**\
+After some time, the jeepers start to move extremely quickly across the screen. I suspect that this is as a result of the forces acting on it being accumulated without being reset at each iteration.
 
 **Possible Improvements**
 
-+ Reducing margin of error for collisions
-+ Smoother transition from light stage to dark stage
++ Improved food system. Currently, the zoinks don't actually lose food in their storage unless a jinkie interacts with it, so theoretically, a zoink might only need to feed once throughout a run of the code. Implementing a hunger system might be worth thinking about.
++ Less erratic behaviour of the jeepers.
 
 **Photos of Project**
 
