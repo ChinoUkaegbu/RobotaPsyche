@@ -110,4 +110,4 @@ This was a really interesting project. I particularly enjoyed the freedom to com
 
 **Cool Things I Noticed**
 
-+ For the food particles, they either spawn automatically if they haven't been on screen in the last five seconds since the last particle was eaten, or the users can manually add particles by clicking on the screen. However, I noticed that the zoinks survived for far much longer when I added the food manually, rather than waiting for it to spawn which I found interesting as I wasn't intentionally trying to keep the zoinks alive for longer, I was just clicking on "random" spots on the screen.
+For the food particles, they either spawn automatically if they haven't been on screen in the last five seconds since the last particle was eaten, or the users can manually add particles by clicking on the screen. However, I noticed that the zoinks survived for far much longer when I added the food manually, rather than waiting for it to spawn which I found interesting as I wasn't intentionally trying to keep the zoinks alive for longer, I was just clicking on "random" spots on the screen.
