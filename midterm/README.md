@@ -11,57 +11,13 @@ The task was to develop a more complex ecology, either continuing with what was 
 
 The names of the character as well as the colors used to depict them were drawn from the hit TV series Scooby Doo. The behaviours were inspired by a combination of real life systems as well as imagined ones.
 
-**Concept and Implementation**
+**Concept**
 
-This project is a simulation of the lives of fishes under the sea and their reactions to certain elements around them. There are two fishes implemented and consequntly two classes created for the two fishes : tuna and sharks. 
+This project is a depiction of a made up ecosyste, consisting of three creatures: the zoinks, jinkies and jeepers. Alongside the living creatures, there exists the food particles present in the ecosystem as well as an incubator.
 
-The tuna are small fishes that move together in groups (schooling). I wanted to simulate that behaviour in Processing and so in the Tuna class, I created a method called attract() which would make each tuna attracted to every tuna apart from itself. 
-
-The  shark are big fishes that prey on the tuna. To simulate that behaviour, I created an eat() method in the Shark class which would remove any tuna that bumped into the shark from the array list of Tuna (i.e. the shark would consume said fish). Also, I wanted the sharks to be competing for the tuna in the ecosystem and so in order for them to not 'work together', I created a repel() method so that the sharks would repel each other.
-
-Also, I wanted the sharks to have unpredictable movements to sort of put the tuna in a frenzy and so I modified the checkEdges() method so that instead of the sharks bouncing when they hit the boundaries, they appear in a random position on the screen. However the tuna still bounce when they hit the edges.
-
-In addition to having the fish, there is also two 'fishing hooks' represented by the two rectangles at the top of the screen. I wanted the hooks to simulate fisherman fishing by throwing their hooks in the water. However, the fishermen are only going after the sharks because they feel as though the tuna are too small and not worth anything. The hooks are meant to serve as a threat to the shark population because each hook class has a catch() method so that if any of the sharks swim close to the hooks, they are caught and removed from the arraylist. Furthermore, the hooks also disappear for 10 seconds and reappear after that interval because I thought that the fishermen's arms might be hurting and so at some point they would take the hooks out of the water to rest.
-
-Furthermore, there is an 'incubator' class which is responsible for creating more tuna. The idea is that each tuna has an attribute know as 'breedable' which is a boolean variable initially set to true. This means all tuna initially is capable of entering the incubator and having an effect on it. The incubator class has a variable called 'counter' (set initially to 0) and a method known as breed(). The breed() method checks if 2 fishes have entered into the incubator consecutively and if both fishes have the breedable attribute set to true, the counter is incremented  by 2 and the breedable attribute is set to false. When this happens, a new tuna is added to the array list and is thus introduced to the ecosystem.
-
-```js
-//Incubator
-
-void breed() {
-    if (counter==0)
-    {
-      display();
-    }
-
-    //For all the tuna
-    for (int i = 0; i<tunas.size(); i++)
-    {
-      //if the tuna is in the incubator region and hasn't been there before, then increment te counter variable and set brredability of the fish to false;
-      if (tunas.get(i).location.x >= location.x && tunas.get(i).location.x <= location.x+100 && tunas.get(i).location.y >= 300 && tunas.get(i).location.y <= 600 && tunas.get(i).breedable == true)
-      {
-        counter++;
-        tunas.get(i).breedable = false;
-        break;
-      }
-    }
+The initial concept I had planned for the project can be found in [this section](https://github.com/ChinoUkaegbu/RobotaPsyche/blob/main/midterm/journal.md#27th-february-2022) of the journal
 
 
-    if (counter%2==0 && counter!=0) { //if 2 fish have been in the incubator one after the other (I'll refer to this as one 'iteration', a new tuna fish is spawned and the color of the incubator changes to grey
-      fill(192, 192, 192);
-      rect(location.x, location.y, 100, 300);
-      counter = 0;
-      tunas.add(new Tuna(1.5, // mass
-        random(width), random(height)));
-    } else if (counter%2!=0 && counter!=0) { //if only 1 fish has been in the incubator in that 'iteration' then the color of the incubator changes but 1 more tuna fish for a new fish to be spawned
-      //fill(98,13,168);
-      fill(81,1,160);
-      rect(location.x, location.y, 100, 300);
-    }
-  }
-  ```
-
-Finally, the ecosystem itself has a behaviour which I thought would be a fun addition. The background is made up of two rectangles that cover half the height of the window and stretch out across the entire width. The top rectangle is a lighter shade than the bottom rectangle. This is due to the presence of the sun (the yellow sector in the top left corner of the window) because as depth decreases, less light gets into the water. Also, the fishes (both sharks and tuna) obey this rule because when they are in the 'light area' they have a lighter more vibrant shade but once they cross over into the 'dark area', they have a darker and somewhat duller shade to signify the influence of sunlight on the ecosystem.
 
 **Implementation**
 
