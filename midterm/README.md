@@ -97,9 +97,9 @@ I was initially using the syntax ```for(Food f: foods)``` to iterate over the fo
 
 ![1](media/demo_1.png)
 
-![1](media/demo_2.png)
+![2](media/demo_2.png)
 
-![1](media/demo_3.png)
+![3](media/demo_3.png)
 
 [Link to Video](https://youtu.be/xJ4EKzne_9Y)
 
