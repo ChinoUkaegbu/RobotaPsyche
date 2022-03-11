@@ -32,6 +32,7 @@ The initial concept I had planned for the project can be found in [this section]
 + Jinkies
    - Description: elliptical in shape. Smaller in size than the jeepers and are either red or pink depending on the amount of food they've eaten
    - Defenders of the zoinks. Have a symbiotic relationship with the zoinks as they are unable to hunt for food and so they rely on the zoinks for nutrition and protect them by repelling the jeepers.
+   - Can only feed from zoinks if the zoinkm has more than 10 food particles in store.
    - Are randomly dispersed across the ecosystem and only move vertically downwards.
 
 + Food
@@ -101,7 +102,7 @@ I was initially using the syntax ```for(Food f: foods)``` to iterate over the fo
 
 ![3](media/demo_3.png)
 
-[Link to Video](https://youtu.be/xJ4EKzne_9Y)
+[Link to Video](https://youtu.be/RNOHgDbdMpM)
 
 **Conclusion**
 
