@@ -95,11 +95,11 @@ I was initially using the syntax ```for(Food f: foods)``` to iterate over the fo
 
 **Photos of Project**
 
-![1](images/Screenshot_1.png)
+![1](media/demo_1.png)
 
-![2](images/Screenshot_2.png)
+![1](media/demo_2.png)
 
-![3](images/Screenshot_3.png)
+![1](media/demo_3.png)
 
 [Link to Video](https://youtu.be/xJ4EKzne_9Y)
 
