@@ -15,8 +15,34 @@ The names of the character as well as the colors used to depict them were drawn 
 
 This project is a depiction of a made up ecosyste, consisting of three creatures: the zoinks, jinkies and jeepers. Alongside the living creatures, there exists the food particles present in the ecosystem as well as an incubator.
 
-The initial concept I had planned for the project can be found in [this section](https://github.com/ChinoUkaegbu/RobotaPsyche/blob/main/midterm/journal.md#27th-february-2022) of the journal
+The initial concept I had planned for the project can be found in [this section](https://github.com/ChinoUkaegbu/RobotaPsyche/blob/main/midterm/journal.md#27th-february-2022) of the journal. Most of the ideas were implemented with a couple of modifications which I will go into detail about below.
 
++ Zoinks
+   - Description: circular in shape. Small in size and are either grey or lemon green depending on the amount of stored food.
+   - Food hunters of the ecosystem. Are designed to seek for the objects of the food class.
+   - Store food gathered and share with the jinkies.
+   - Are the only creatures capable of breeding.
+   - Can be eaten by the jeepers if they collide.
+
++ Jeepers
+   - Description: triangular in shape. Larger in size and purple at all times.
+   - Predators of the ecosystem. However, they hunt only the zoinks and do not eat the food particles either.
+   - Are repelled by each other.
+
++ Jinkies
+   - Description: elliptical in shape. Smaller in size than the jeepers and are either red or pink depending on the amount of food they've eaten
+   - Defenders of the zoinks. Have a symbiotic relationship with the zoinks as they are unable to hunt for food and so they rely on the zoinks for nutrition and protect them by repelling the jeepers.
+   - Are randomly dispersed across the ecosystem and only move vertically downwards.
+
++ Food
+   - Description: circular in shape. Larger in size than the zoinks and are light pink at all times.
+   - Source of nutrition for the zoinks. One particle is capable of feeding at most two zoinks before it is depleted.
+   - At most two food particles in the ecosystem at a given time.
+   - Only move vertically downawards.
+
++ Incubator
+   - Description: rectangular in shape. Stationary and located at the far right of the ecosystem. Alternates between grey and a dark purple depending on whether it's in use or not.
+   - Facilitate breeding among the zoinks only when population drops below a certain threshold.
 
 
 **Implementation**
