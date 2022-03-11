@@ -47,7 +47,7 @@ The initial concept I had planned for the project can be found in [this section]
 
 **Implementation**
 
-The creatures and non-living parts of implemented as individual classes. In addition to the zoinks seeking after the objects of the Food class. The zoinks also exhibit separation and so while they move together while hunting for food particles, there is a distance between each zoink as shown below
+The creatures and non-living parts of implemented as individual classes. In addition to the zoinks seeking after the objects of the Food class. The zoinks also exhibit separation (modified [code](https://github.com/nature-of-code/noc-examples-processing/tree/master/chp06_agents/NOC_6_07_Separation) from Dan Shiffman) and so while they move together while hunting for food particles, there is a distance between each zoink as shown below
 
 ![separation](media/separation.png)
 
