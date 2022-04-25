@@ -1,7 +1,5 @@
 # Presentation Summary
 
-150-250 words: Write a summary of your presentation, including the discussion that followed your presentation.
-
 My presentation was titled ['On Robots, Trust and Bias'](https://docs.google.com/presentation/d/1vmvaffQWiOFEo1LiunooRmOfwNswQy6QNEKYJ4Im-IU/edit?usp=sharing) and in this presentation, I examined the relationship between trust and bias in robots and to what extent these factors play out in society by including real life examples of these factors at play.
 
 I first focused on trust by putting forward a definition of trust in automation, in order to provide a uniform framework for our discussions. Then, I attempted to provide a contrast between the types of trust we as humans have in robots. By doing this, I focused on the observation that trust always has a social and operational context or environment, which was integral to our later discussions.
