@@ -1,1 +1,1 @@
-(https://github.com/briankim113/RobotaPsyche/blob/main/25april/discussionSummary.md)
+[Discussion Summary](https://github.com/briankim113/RobotaPsyche/blob/main/25april/discussionSummary.md)
